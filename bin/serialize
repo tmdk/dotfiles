@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+$input = false;
+
+$input = isset( $argv[1] ) ? $argv[1] : file_get_contents( 'php://stdin' );
+
+$input = trim( $input );
+
+if ( empty( $input )) {
+	die('No input given.');
+} else {
+	$serialized = '';
+	eval( "\$serialized = serialize( $input );" );
+
+	echo $serialized;
+}
