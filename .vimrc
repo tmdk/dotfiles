@@ -131,7 +131,7 @@ nnoremap <silent><C-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
 set sw=4
 set ts=4
 set sts=4
-set noet
+set et
 
 " Color scheme and font
 set background=dark
