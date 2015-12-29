@@ -138,7 +138,7 @@ set background=dark
 color solarized
 set gfn=DejaVu\ Sans\ Mono\ 10
 
-# Only underline matching paren for readability
+" Only underline matching paren for readability
 hi MatchParen cterm=underline ctermbg=none ctermfg=none
 
 " Commenting blocks of code.
